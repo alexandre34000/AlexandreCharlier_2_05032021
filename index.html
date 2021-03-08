@@ -5,18 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Projet 2 integration maquette web</title>
-
+    <link rel="icon" type="image/png" href="./pictures/logo/Reservia.svg" sizes="114x114">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link href='http://fonts.googleapis.com/css2?family=Raleway: wght@100;200;300;400;500;600;800;700;900&display=swap'
+        rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css2?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+       <script src="https://kit.fontawesome.com/3e57eadaa6.js" crossorigin="anonymous"></script>-->
 </head>
 
 <body>
-    <header>
-
+    <header class="Header">
+        <img style="background-color :green;" alt="logo de Reservia" src="./pictures/logo/Reservia.svg" />
+        <nav class="menu" style="background-color :red;">
+            <ul style="background-color :blue;">
+                <li class="element-menu"><a href="#content-hebergements">Hébergements</a></li>
+                <li class="element-menu"><a href="#content-activites">Activités</a></li>
+                <li class="element-menu"><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p>Test page sur github page</p>
-    </main>
-    <footer>
+        <article classe="content-up">
+            <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <section class="search-bar">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <input type="texte">
+                <button>Rechercher</button>
+            </section>
+            <section class="filter">
+                <p>Filtres</p>
+                <span><i class="fas fa-money-bill-wave blue-color"></i>Economique</span>
+                <span><i class="fas fa-child blue-color"></i>Familial</span>
+                <span><i class="fas fa-heart blue-color"></i>Romantique</span>
+                <span><i class="fas fa-dog blue-color"></i>Animaux autorisés</span>
+            </section>
+            <span><i class="fas fa-info blue-color"></i>Plus de 500 logements sont disponibles dans cette ville</span>
+        </article>
+        <article class="content-middle" id="content-hebergements">
 
+            <section class="hebergement grey-color">
+                <h2>Hébergement à Marseille</h2>
+                <div class="widget-hebergements">
+                    <div class="widgets-hebergement">
+                        <a href="test.html">
+                            <img alt="photo" src="">
+                            <h3>Auberge La Cannabieres</h3>
+                            <p> Nuit à partir de 25€</p>
+                            <p>etoiles</p>
+                        </a>
+                    </div>
+                    <div class="widgets-hebergement">
+                        <img alt="photo" src="">
+                        <h3>Auberge La Cannabieres</h3>
+                        <p> Nuit à partir de 25€</p>
+                        <p>etoiles</p>
+                    </div>
+                    <div class="widgets-hebergement">
+                        <img alt="photo" src="">
+                        <h3>Auberge La Cannabieres</h3>
+                        <p> Nuit à partir de 25€</p>
+                        <p>etoiles</p>
+                    </div>
+                    <div class="widgets-hebergement">
+                        <img alt="photo" src="">
+                        <h3>Auberge La Cannabieres</h3>
+                        <p> Nuit à partir de 25€</p>
+                        <p>etoiles</p>
+                    </div>
+                    <div class="widgets-hebergement">
+                        <img alt="photo" src="">
+                        <h3>Auberge La Cannabieres</h3>
+                        <p> Nuit à partir de 25€</p>
+                        <p>etoiles</p>
+                    </div>
+                    <div class="widgets-hebergement">
+                        <img alt="photo" src="">
+                        <h3>Auberge La Cannabieres</h3>
+                        <p> Nuit à partir de 25€</p>
+                        <p>etoiles</p>
+                    </div>
+                </div>
+                <button> Afficher plus</button>
+            </section>
+            <aside class="populaires grey-color">
+                <h2>Les plus populaires</h2>
+                <span><i class="fas fa-chart-line"></i></span>
+                <div class="widgets-populaires">
+                    <img alt="photo" src="">
+                    <h4>Auberge La Cannabieres</h4>
+                    <p> Nuit à partir de 25€</p>
+                    <p>etoiles</p>
+                </div>
+                <div class="widgets-populaires">
+                    <img alt="photo" src="">
+                    <h4>Auberge La Cannabieres</h4>
+                    <p> Nuit à partir de 25€</p>
+                    <p>etoiles</p>
+                </div>
+                <div class="widgets-populaires">
+                    <img alt="photo" src="">
+                    <h4>Auberge La Cannabieres</h4>
+                    <p> Nuit à partir de 25€</p>
+                    <p>etoiles</p>
+                </div>
+            </aside>
+        </article>
+        <article class="content-bottom" id="content-activites">
+            <h2>Activités à Marseille</h2>
+            <section class="activites">
+                <div class="widgets-activités">
+                    <img alt="photo" src="">
+                    <h4>view port</h4>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="grey-color">
+        <section class="footer-left">
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="#"> Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </section>
+        <section class="footer-middle">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hotel</a></li>
+            </ul>
+        </section>
+        <section class="footer-right">
+            <h3>Assistance</h3>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </section>
     </footer>
 </body>
 
