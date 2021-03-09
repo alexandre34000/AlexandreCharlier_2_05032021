@@ -1,0 +1,82 @@
+
+.blue-color{
+    color :#0065FC;
+} 
+.blue-light-color  {
+    color :#DEEBFF;
+}
+.grey-color{
+    background-color : #F2F2F2;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+h1 {font-size:44px; font-weight:200; margin:0;}
+h2 {font-size:33px; font-weight:300; margin:0;}
+h3 {font-size:22px; font-weight:700; margin:0;}
+h4, h5 {font-size: 15px; font-weight:800; margin:0;}
+a { text-decoration : none; }
+
+
+header{
+    width:100%;
+    height :140px;
+    margin :0 0 30px 0;
+    background-color: yellow;
+}
+
+.container-search{
+    width :100%;
+    height :510px;
+    margin :0 0 30px 0;
+    background-color:green;
+}
+.content-search{
+    width:100%;
+    padding:0 20px;
+}
+
+.container-middle{
+    width :100%;
+    margin:0 0 30px 0;
+    background-color: yellow;
+}
+.container-popular{
+    width : 100%;
+    height: 580px;
+    margin: 0 0 30px 0;
+    background-color: #F2F2F2;
+}
+.content-popular{
+    padding:0 20px;
+}
+.container-hebergement{
+    width : 100%;
+    height :1380px;
+    margin: 0 0 30px 0 ;
+    background-color:green;
+
+}
+.container-activity{
+    width : 100%;
+    height :1350px;
+    padding: 0 20px;   
+    background-color:rgb(0, 124, 128);
+}
+
+footer{
+    padding : 0 20px;
+    width:100%;
+    height:485px;
+    background-color: #F2F2F2;
+}
+
+
+
+@media screen and (min-width:768px){
+
+
+}
