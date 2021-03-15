@@ -15,4 +15,7 @@ html and background css carried out for mobile.
 header-nav for mobile and destock carried out
 
 15/03/2021
- console serach for mobile and destock carried out
+console serach for mobile and destock carried out
+ 
+ 15/03/2021
+correction of bugs following the passage of validator w3c
