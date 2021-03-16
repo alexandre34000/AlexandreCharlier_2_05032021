@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width">
     <title>Projet 2 integration maquette web</title>
     <link rel="icon" type="image/png" href="./pictures/logo/Reservia.svg" sizes="114x114">
-    <link rel="stylesheet" href="index.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+    <link rel="stylesheet" href="./CSS/Base/_fonts.css">
+    <link rel="stylesheet" href="./CSS/Base/_variables.css">
+    <link rel="stylesheet" href="./CSS/Layout/_header.css">
+    <link rel="stylesheet" href="./CSS/Layout/_footer.css">
+    <link rel="stylesheet" href="./CSS/Components/_filter.css">
+    <link rel="stylesheet" href="./CSS/Components/_cards.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    
 </head>
 
 <body>
-    <header class="Header">
-        <nav class="container-menu-nav">
-            <a class="element-menu item-a" href="index.html" rel="nofollow"><img class="logo"
+    <header class="header">
+        <nav class="nav">
+            <a class="nav-elements nav__item-a" href="index.html" rel="nofollow"><img class="nav__logo"
                     alt="Revenir à la page d'acceuil Reservia.com" src="./pictures/logo/Reservia.svg" /></a>
-            <a class="element-menu item-b" href="#">S'inscrire</a>
-            <a class="element-menu item-c" href="#content-hebergements">Hébergements</a>
-            <a class="element-menu item-d" href="#content-activites">Activités</a>
+            <a class="nav__elements nav__item-b " href="#">S'inscrire</a>
+            <a class="nav__elements nav__item-c nav__item--hover" href="#content-hebergements">Hébergements</a>
+            <a class="nav__elements nav__item-d nav__item--hover" href="#content-activites">Activités</a>
         </nav>
     </header>
     <main>
@@ -54,7 +63,7 @@
                     </div>
                 </section>
                 <div class="information">
-                    <span class="icon-information"><i class="fas fa-info blue-color blue-light-color"></i></span> 
+                    <span class="icon-information"><i class="fas fa-info blue-color blue-light-color"></i></span>
                     <p class="text-information">Plus de 500 logements sont disponibles dans cette
                         ville</p>
                 </div>
@@ -63,26 +72,34 @@
         <article class="container-middle">
             <section class="container-popular">
                 <div class="content-popular">
-                    <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
-
-                    <!-- <div class="widgets-populaires">
-                    <img alt="photo" src="">
-                    <h4>Auberge La Cannabieres</h4>
-                    <p> Nuit à partir de 25€</p>
-                    <p>etoiles</p>
-                </div>
-                <div class="widgets-populaires">
-                    <img alt="photo" src="">
-                    <h4>Auberge La Cannabieres</h4>
-                    <p> Nuit à partir de 25€</p>
-                    <p>etoiles</p>
-                </div>
-                <div class="widgets-populaires">
-                    <img alt="photo" src="">
-                    <h4>Auberge La Cannabieres</h4>
-                    <p> Nuit à partir de 25€</p>
-                    <p>etoiles</p>
-                </div> -->
+                    <section class="content-populaire__title">
+                        <h2>Les plus populaires</h2>
+                        <span class="content-populaire__icon "><i class="fas fa-chart-line"></i></span>
+                    </section>
+                    <div class="card-populaire">
+                        <img class="card-populaire__photo" alt="photo d'hotel populaire" src="./pictures/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" />
+                        <div class="card-populaire__legend">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p class="card-populaire__price"> Nuit à partir de 25€</p>
+                            <p class="card-populaire__etoile">Etoiles</p>
+                        </div>
+                    </div>
+                    <div class="card-populaire">
+                        <img class="card-populaire__photo" alt="photo d'hotel populaire" src="./pictures/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg ">
+                        <div class="card-populaire__legend">
+                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                            <p class="card-populaire__price"> Nuit à partir de 25€</p>
+                            <p class="card-populaire__etoile">Etoiles</p>
+                        </div>
+                    </div>
+                    <div class="card-populaire">
+                        <img class="card-populaire__photo" alt="photo d'hotel populaire" src="./pictures/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                        <div class="card-populaire__legend">
+                            <h3>Hotel Tout bleu et Blanc</h3>
+                            <p class="card-populaire__price"> Nuit à partir de 25€</p>
+                            <p  class="card-populaire__etoile">Etoiles</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="container-hebergement">
@@ -142,6 +159,7 @@
                 </div>-->
                 </div>
             </section>
+            <!--  </div> -->
         </article>
     </main>
     <footer>

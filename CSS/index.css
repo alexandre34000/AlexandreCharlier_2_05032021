@@ -1,4 +1,18 @@
 /* INDEX.CSS 1.0 mars 2021 by Alexandre CHARLIER  */
+/**
+Author : Alexandre CHARLIER;
+URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+Theme Name : Hotel Reservia ;
+Description : Mise en forme des modules principaux
+date :mars 2021; 
+Conventioon de nommage, méthode BEM :
+block-name__elem-name--mod-name--mod-val
+Les noms sont écrits en lettres latines minuscules.
+Les mots dans les noms des entités BEM sont séparés par un tiret ( - ).
+Le nom de l'élément est séparé du nom du bloc par un double tiret bas ( __ ).
+Les modificateurs booléens sont séparés du nom du bloc ou de l'élément par un double tiret ( -- ).
+La valeur d'un modificateur est séparée de son nom par un double tiret ( -- ).
+*/
 
 .blue-color{color :#0065FC;} 
 .blue-light-color  { background-color :#DEEBFF;}
@@ -6,34 +20,18 @@
 
 
 
-html,body{font-family: 'Raleway', sans-serif; font-size:15px; width :100%; margin:0;padding:0;}
-html {overflow-x: hidden;}
-h1 {font-size:25px; font-weight:1000; margin:0 0 7px 0;}
-h2 {font-size:20px; font-weight:300; margin:0;}
-h3 {font-size:22px; font-weight:700; margin:0;}
-h4, h5 {font-size: 15px; font-weight:800; margin:0;}
+html,body{ margin:0;padding:0; width :100%; overflow-x: hidden;}
+
+h1 { margin:0 0 7px 0;}
+h2, h3, h4, h5 {margin:0;}
 a { text-decoration : none;  } 
 li {list-style : none;}
 p{margin:0; padding:0;}
 
 
-/* Header */
 
-header{width:100%; height :128px; margin :0 0 30px 0; }
-.container-menu-nav{ 
-    margin-block-start:0px;
-    padding-inline-start: 0px;
-    display:grid;
-    grid-template-columns : 50% 50%;  
-    grid-template-rows : 64px 64px;
-    align-items : center;
-}
-.container-menu-nav > a:hover{ border-bottom-color :#0065FC;; color :#0065FC;} 
-.element-menu{height: 56px; line-height : 64px; border-top-color:transparent; border-bottom-color: #F2F2F2;;}
-.item-a{padding :0 20px; align-content:center;}
-.item-b{padding:0 20px; text-align:right; color :#0065FC;}
-.item-c,.item-d{text-align:center; border-style:solid; border-width :3px 0; color:black;}
-.logo{ padding-top:8px; width :97px; height:45px;}
+/* Header in CCS/Layout/_header */ 
+
 
 /* main */
 
@@ -74,25 +72,103 @@ header{width:100%; height :128px; margin :0 0 30px 0; }
 
 
 
-
-
-
 .container-middle{
     width :100%;
     margin:0 0 30px 0;
-    background-color: yellow;
 }
+
 .container-popular{
-    width : 100%;
     height: 580px;
-    
     margin: 0 0 30px 0;
     background-color: #F2F2F2;
 }
 .content-popular{
-    padding-top:40px;
-    margin:0 5%;
+    margin: 0 5%;  
 }
+
+.content-populaire__title{
+    width:100%;
+    margin-top:40px;
+    margin-bottom:20px;
+    display:inline-block;
+}
+
+.content-populaire__title > h2{
+    display :inline;
+}
+.content-populaire__icon{
+    font-size:20px;
+    float:right;
+}
+
+
+
+
+
+
+
+
+/* .container-popular{
+    height: 580px;
+    margin: 0 0 30px 0;
+    background-color: #F2F2F2;
+}
+.content-popular{
+    margin: 0 5%;  
+}
+
+.content-middle-title{
+    width:100%;
+    margin-top:40px;
+    margin-bottom:20px;
+    display:inline-block;
+}
+
+.content-middle-title > h2{
+    display :inline;
+}
+.icon-populaire{
+    font-size:20px;
+    float:right;
+}
+
+.widgets-populaires{
+    width:auto;
+    height :133px;
+    border:6px solid white;
+    border-radius:20px;
+    margin-bottom:10px;
+    display:flex;
+    flex-direction:row;
+    background-color:white;
+}
+
+.widgets-populaires img{
+width : 126px; 
+height :133px;
+object-fit:cover;
+border-radius :15px;
+
+}
+.text-populaire{
+    width:50%;
+    padding-left :20px;
+    padding-top:20px;
+    background-color:green;
+}
+.widget-title{
+
+}
+.widget-price{
+
+}
+.widget-stars{
+
+}
+
+ */
+
+
 .container-hebergement{
     width : 100%;
     height :1380px;
@@ -113,7 +189,7 @@ header{width:100%; height :128px; margin :0 0 30px 0; }
     margin:0 5%;
 }
 
-footer{
+/* footer{
     width:100%;
     height:485px;
     background-color: #F2F2F2;
@@ -121,28 +197,30 @@ footer{
 
 .content-footer{
     margin :0 8%;
-}
+} */
 
 
 
 @media screen and (min-width:768px){
 
 /* Header */
-.container-menu-nav{
+/* .container-menu-nav{
     padding:0 50px;
     margin-right:0;
     grid-template-columns :  auto 162px 148px 128px; 
     grid-template-rows : 128px;
-    }
-
-.container-menu-nav > a:hover{ border-top-color :#0065FC;; border-bottom-color:transparent;} 
+    } */
+/* 
+.container-menu-nav > a:hover{ border-top-color :var(--color-blue); border-bottom-color:transparent;} 
 .element-menu{ height: 120px; line-height : 120px; border-bottom-color: transparent; grid-row: 1;}
 .item-a{grid-column : 1 / 2; padding :0;}
 .item-b{text-align :center; grid-column : 4 / 5; padding :0;}
 .item-c{grid-column : 2 / 3; border-width :3px 0;}
 .item-d{grid-column : 3 / 4; border-width :3px 0 ;}
 .logo{padding-top :40px;}
+ */
 
+ 
 /* Container Search*/
 .container-search{  height :280px; margin :0 0 30px 0; }
 .search-bar{width: 419px; height :50px;  margin-top :7px;grid-template-columns: 53px 234px 132px;}
@@ -152,7 +230,12 @@ footer{
 .filter{width :100%; display:flex; flex-direction: row; }
 .filter>h2{ align-self:center;}
 .list-filtres{ width:100%;}
-
-
+/* 
+.container-popular{
+ 
+    height: 580px;
+    margin: 0 5% 30px 5%;
+    background-color: #F2F2F2;
+} */
 
 }
