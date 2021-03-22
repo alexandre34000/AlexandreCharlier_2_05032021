@@ -1,0 +1,252 @@
+/* INDEX.CSS 1.0 mars 2021 by Alexandre CHARLIER  */
+/**
+Author : Alexandre CHARLIER;
+URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+Theme Name : Hotel Reservia ;
+Description : Mise en forme des modules principaux
+date :mars 2021; 
+Conventioon de nommage, méthode BEM :
+block-name__elem-name--mod-name--mod-val
+Les noms sont écrits en lettres latines minuscules.
+Les mots dans les noms des entités BEM sont séparés par un tiret ( - ).
+Le nom de l'élément est séparé du nom du bloc par un double tiret bas ( __ ).
+Les modificateurs booléens sont séparés du nom du bloc ou de l'élément par un double tiret ( -- ).
+La valeur d'un modificateur est séparée de son nom par un double tiret ( -- ).
+*/
+
+
+html,body{ margin:0;padding:0; width :100%; overflow-x: hidden;}
+
+a { text-decoration : none; color:var(--color-black);  } 
+li {list-style : none;}
+p{margin:0; padding:0;}
+
+
+
+/* Header 
+*
+* in Css/Layout/_header 
+*
+*/ 
+
+
+
+/* Main - Container Search*/
+
+.container-search{ 
+    width :100%; 
+    height :490px; 
+    margin :15px 0 15px 0; 
+}
+    .content-search{
+        margin:0 5%;
+    }
+
+    .content-search__label{
+        font-weight:500;
+        font-size:16px; 
+        padding:7px 0;
+    }
+
+.information{ 
+    height:26px; 
+    display :flex; 
+    flex-direction:row; 
+    line-height: 26px; 
+}
+    .icon-information{ 
+        width:24px; 
+        height:24px;
+        margin-top:-1px;
+        text-align:center; 
+        border: 1px solid var(--color-grey); 
+        border-radius:100%;
+        font-size:12px; 
+        color:var(--color-blue); 
+        line-height:24px;
+       
+    }
+    .fa-info{
+        width:24px;
+        height:auto;
+    }
+    .text-information{ 
+        margin-left :10px; 
+        font-size:16px; 
+        font-weight :500;
+    }
+
+
+/* Main - container middle */
+
+.container-middle{
+    width :100%;
+    margin:15px 0 15px 0;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* box populaire*/
+
+.container-popular{
+    width:100%;
+    height: 535px;
+    margin: 0 0 0 0;
+    background-color: var(--color-grey);
+    padding-top:45px; 
+}
+.content-popular{
+    margin: 0 5%;  
+}
+
+.content-popular__title{
+    width:100%;
+    display:inline-block;
+}
+
+.content-popular__title > h2{
+    display :inline;
+}
+.content-popular__icon{
+    float:right;
+    font-size:22px; font-weight:800;
+}
+.content-popular__cards{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:20px 0 20px 0;
+}
+
+
+/* ----------------Box hebergement------------- */
+
+.container-hebergement{
+    width : 100%;
+    height :1380px;
+    margin: 0 0 0px 0 ;
+    padding-top:45px;
+}
+
+    .content-hebergement{
+        margin:0 5%;
+    }
+        .content-hebergement__cards{
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            align-content:space-between;
+            margin:10px 0 30px 0;
+            height:1280px;
+        }
+
+        .content-hebergement__more-link {
+            font-size:18px;
+            font-weight: 800;
+        }
+
+/* ------------------Box Activity----------------- */
+.container-activity{
+    width : 100%;
+    height :1350px;
+    padding-top:45px;
+}
+.content-activity{
+    margin:0 5%;
+}
+.content-activity__cards{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    margin-top:20px;
+    width:100%;
+    height:1300px;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+
+@media screen and (min-width:1200px){
+   
+ 
+/* Main - Container Search*/
+.container-search{  height :280px; margin :0 0 30px 0; }
+
+.content-search{margin:0 3.0vw;padding: 0 3px;}
+
+.information{ padding-left:5px; }
+
+/* Main - Container-Middle */
+.container-middle{
+    width:auto;
+    margin: 0 3vw 30px 3vw;
+    display :flex;
+    justify-content :space-between;
+
+ }
+    .container-popular{
+        width:29vw;
+        height: 580px;
+        padding-top:45px;
+        border-radius:18px;
+        order:2
+    }
+
+        .content-popular{
+            margin:0 2.0vw;
+            padding:0 8px;
+        }
+
+        .content-popular__cards{
+            margin:20px 0 20px 0;
+            width:100%;
+            height:500px; 
+        }
+
+    .container-hebergement{
+        width : 61vw;
+        height :580px;
+         margin: 0 0 30px 0 ;
+        padding-top:45px; 
+        background-color:var(--color-grey);
+        border-radius:18px;
+        order:1;
+    }
+
+        .content-hebergement{
+            margin:0 2.0vw;
+            padding:0 8px;
+        }
+            .content-hebergement__cards{
+                display:flex;
+                flex-wrap:wrap;
+                flex-direction:initial;
+                justify-content:space-between;
+                align-content:space-between;
+                margin:20px 0 45px 0;
+                width:100%;
+                height:435px; 
+            }
+
+            .container-activity{
+                width : 100%;
+                height :525px;
+                padding-top:45px;
+                order:3;
+            }
+            .content-activity{
+                margin:0 0px;
+                padding:0 8px;
+            }
+            .content-activity__cards{
+                display:flex;
+                flex-wrap:wrap; 
+                justify-content:space-between; 
+                align-content:space-between;
+                margin-top:20px;
+                width:100%;
+                height:450px;
+            }
+}
+
