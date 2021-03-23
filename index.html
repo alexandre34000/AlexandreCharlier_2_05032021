@@ -32,12 +32,11 @@
         </nav>
     </header>
     <main>
-        <section class="container-search">
-            <div class="content-search">
+        <section class="container-xl container-search">
+            <div class="content-sm content-search">
                 <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="content-search__label">En plein centre ville ou en pleine nature</p>
                 <form class="search-bar" id="search-bar" role="search">
-                    <!-- action="/search.do" -->
                     <button class="button-map grey-color" onclick="getLocation()"><i
                             class="fas fa-map-marker-alt"></i></button>
                     <input class="input-text" id="input-search" type="search" name="destination" placeholder="localité"
@@ -49,10 +48,11 @@
                     <h2 class="filter-title">Filtres</h2>
                     <div class="filter-list">
                         <div class="items-filter itemFilter1">
-                            <span class="icon-filter ">
+                            <span for="toto" class="icon-filter" id= "tutu">
                                 <i class="  fas fa-money-bill-wave "></i>
                             </span>
-                            <label class="text-filter">Economique</label>
+                            <input class="text-filter" id="toto" type="checkbox"  />
+                            <label class="titi" for="toto">Economique</label>
                         </div>
                         <div class="items-filter itemFilter2">
                             <span class="icon-filter  ">
@@ -72,84 +72,84 @@
                     </div>
                 </section>
                 <div class="information">
-                    <p class="icon-information">
-                        <i class="fas fa-info "></i>
-                    </p>
+                    <span class="content-information">
+                        <i class="icon-information fas fa-info "></i>
+                    </span>
                     <p class="text-information">Plus de 500 logements sont disponibles dans cette
                         ville</p>
                 </div>
             </div>
         </section>
-        <div class="container-middle">
-            <section class="container-popular">
-                <div class="content-popular">
+        <div class="container-middle container-middle__xl">
+            <section class="container container-xl container-popular">
+                <div class="content-sm content-xl content-popular ">
                     <div class="content-popular__title">
-                        <h2>Les plus populaires</h2>
+                        <h2 class="content-popular__h2">Les plus populaires</h2>
                         <span class="content-popular__icon "><i class="fas fa-chart-line"></i></span>
                     </div>
-                    <div class=content-popular__cards>
-                        <div class="card-populaire">
+                    <div class="content-cards content-cards__popular">
+                        <div class="card card-populaire">
                             <a class="card-populaire__link" href="test.html">
-                                <img class="card-populaire__photo" alt="photo d'hotel populaire"
+                                <img class="card-photo card-populaire__photo" alt="photo d'hotel populaire"
                                     src="./pictures/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" />
                                 <div class="card-populaire__legend">
                                     <h3>Hôtel Le soleil du matin</h3>
                                     <p class="card-populaire__price"> Nuit à partir de 128<b>€</b></p>
                                     <div class="card-populaire__stars">
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="card-populaire">
+                        <div class=" card card-populaire">
                             <a class="card-populaire__link" href="test.html">
-                                <img class="card-populaire__photo" alt="photo d'hotel populaire"
+                                <img class="card-photo card-populaire__photo" alt="photo d'hotel populaire"
                                     src="./pictures/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg ">
                                 <div class="card-populaire__legend">
                                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                     <p class="card-populaire__price"> Nuit à partir de 71<b>€</b></p>
                                     <div class="card-populaire__stars">
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
+                                                ></i></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="card-populaire">
+                        <div class="card card-populaire">
                             <a class="card-populaire__link" href="test.html">
-                                <img class="card-populaire__photo" alt="photo d'hotel populaire"
+                                <img class="card-photo card-populaire__photo" alt="photo d'hotel populaire"
                                     src="./pictures/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                                 <div class="card-populaire__legend">
                                     <h3>Hotel Tout bleu et Blanc</h3>
                                     <p class="card-populaire__price"> Nuit à partir de 68<b>€</b></p>
                                     <div class="card-populaire__stars">
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
+                                                ></i></span>
                                     </div>
                                 </div>
                             </a>
@@ -157,139 +157,139 @@
                     </div>
                 </div>
             </section>
-            <section class="container-hebergement">
-                <div class="content-hebergement">
+            <section class="container container-xl container-hebergement">
+                <div class=" content-sm content-xl content-hebergement">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="content-hebergement__cards">
-                        <div class="card-hebergement">
+                    <div class="content-cards content-cards__hebergement">
+                        <div class="card card-hebergement">
                             <a class="card-hebergement__link" href="test.html">
-                                <img class="card-hebergement__photo" alt="photo d'une chambre d'hotel"
+                                <img class="card-photo" alt="photo d'une chambre d'hotel"
                                     src="./pictures/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                                 <div class="card-hebergement__legend">
                                     <h3>Auberge La Cannebière</h3>
                                     <p class="card-hebergement__price"> Nuit à partir de <b>25€</b></p>
                                     <div class="card-hebergement__stars">
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
+                                              ></i></span>
                                     </div>
                                 </div>
                             </a>
 
                         </div>
-                        <div class="card-hebergement">
+                        <div class="card card-hebergement">
                             <a class="card-hebergement__link" href="test.html">
-                                <img class="card-hebergement__photo" alt="photo d'une chambre d'hotel"
+                                <img class="card-photo" alt="photo d'une chambre d'hotel"
                                     src="./pictures/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                                 <div class="card-hebergement__legend">
                                     <h3>Hôtel du port</h3>
                                     <p class="card-hebergement__price"> Nuit à partir de 52<b>€</b></p>
                                     <div class="card-hebergement__stars">
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="card-hebergement">
+                        <div class="card card-hebergement">
                             <a class="card-hebergement__link" href="test.html">
-                                <img class="card-hebergement__photo" alt="photo d'une chambre d'hotel"
+                                <img class="card-photo" alt="photo d'une chambre d'hotel"
                                     src="./pictures/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                                 <div class="card-hebergement__legend">
                                     <h3>Hôtel les mouettes</h3>
                                     <p class="card-hebergement__price"> Nuit à partir de 76<b>€</b></p>
                                     <div class="card-hebergement__stars">
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
+                                                ></i></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="card-hebergement">
+                        <div class="card card-hebergement">
                             <a class="card-hebergement__link" href="test.html">
-                                <img class="card-hebergement__photo" alt="photo d'une chambre d'hotel"
+                                <img class="card-photo" alt="photo d'une chambre d'hotel"
                                     src="./pictures/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                                 <div class="card-hebergement__legend">
                                     <h3>Hôtel de la mer</h3>
                                     <p class="card-hebergement__price"> Nuit à partir de 46<b>€</b></p>
                                     <div class="card-hebergement__stars">
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
+                                                ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
+                                                ></i></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="card-hebergement">
+                        <div class="card card-hebergement">
                             <a class="card-hebergement__link" href="test.html">
-                                <img class="card-hebergement__photo" alt="photo d'une chambre d'hotel"
+                                <img class="card-photo" alt="photo d'une chambre d'hotel"
                                     src="./pictures/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                                 <div class="card-hebergement__legend">
                                     <h3>Auberge Le Panier</h3>
                                     <p class="card-hebergement__price"> Nuit à partir de <b>23€</b></p>
                                     <div class="card-hebergement__stars">
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
                                         <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="false"></i></span>
+                                               ></i></span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="card-hebergement">
+                        <div class="card card-hebergement">
                             <a class="card-hebergement__link" href="test.html">
-                                <img class="card-hebergement__photo" alt="photo d'une chambre d'hotel"
+                                <img class="card-photo" alt="photo d'une chambre d'hotel"
                                     src="./pictures/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                                 <div class="card-hebergement__legend">
                                     <h3>Hôtel chez Amina</h3>
                                     <p class="card-hebergement__price"> Nuit à partir de 96<b>€</b></p>
                                     <div class="card-hebergement__stars">
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
-                                        <span class="icon-star"><i class="fas fa-star star"
-                                                data-active="true"></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                                ></i></span>
+                                        <span class="icon-star icone-star--enable"><i class="fas fa-star star"
+                                               ></i></span>
                                     </div>
                                 </div>
                             </a>
@@ -299,48 +299,48 @@
                 </div>
             </section>
 
-            <section class="container-activity">
-                <div class="content-activity">
+            <section class="container container-xl container-activity">
+                <div class="content-sm content-xl content-activity ">
                     <h2>Activités à Marseille</h2>
-                    <div class="content-activity__cards">
-                        <div class="card-activity card-activity__item1">
-                            <img class="card-activity__photo" alt="photo d'une chambre d'hotel"
+                    <div class="content-cards content-cards__activity">
+                        <div class=" card card-activity card-activity__item1">
+                            <img class="card-photo" alt="photo d'une chambre d'hotel"
                                 src="./pictures/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
                             <div class="card-activity__legend">
                                 <h3>Vieux Port</h3>
                             </div>
                         </div>
-                        <div class="card-activity card-activity__item2">
-                            <img class="card-activity__photo" alt="photo d'une chambre d'hotel"
+                        <div class="card card-activity card-activity__item2">
+                            <img class="card-photo" alt="photo d'une chambre d'hotel"
                                 src="./pictures/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                             <div class="card-activity__legend">
                                 <h3>Fort de Pomègues</h3>
                             </div>
                         </div>
-                        <div class="card-activity card-activity__item3">
-                            <img class="card-activity__photo" alt="photo d'une chambre d'hotel"
+                        <div class="card card-activity card-activity__item3">
+                            <img class="card-photo" alt="photo d'une chambre d'hotel"
                                 src="./pictures/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
                             <div class="card-activity__legend">
                                 <h3>Îles du Frioul</h3>
                             </div>
                         </div>
-                        <div class="card-activity card-activity__item4">
-                            <img class="card-activity__photo" alt="photo d'une chambre d'hotel"
+                        <div class="card card-activity card-activity__item4">
+                            <img class="card-photo" alt="photo d'une chambre d'hotel"
                                 src="./pictures/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
                             <div class="card-activity__legend">
                                 <h3>Parc National des Calanques</h3>
                             </div>
                         </div>
 
-                        <div class="card-activity card-activity__item5">
-                            <img class="card-activity__photo" alt="photo d'une chambre d'hotel"
+                        <div class="card card-activity card-activity__item5">
+                            <img class="card-photo" alt="photo d'une chambre d'hotel"
                                 src="./pictures/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                             <div class="card-activity__legend">
                                 <h3>Notre-Dame-de-la-Garde</h3>
                             </div>
                         </div>
-                        <div class="card-activity card-activity__item6">
-                            <img class="card-activity__photo" alt="photo d'une chambre d'hotel"
+                        <div class="card card-activity card-activity__item6">
+                            <img class="card-photo" alt="photo d'une chambre d'hotel"
                                 src="./pictures/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
                             <div class="card-activity__legend">
                                 <h3>Parc Longchamp</h3>
