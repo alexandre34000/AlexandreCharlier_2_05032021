@@ -6,9 +6,9 @@ Description : Déclaration des variables;
 */
 
 :root {
-    --color-blue:#0065FC;
-    --color-blue-light :#DEEBFF;
-    --color-grey :#F2F2F2;
-    --color-black:#000000;
-    --color-white:#ffffff;
+  --color-blue: #0065fc;
+  --color-blue-light: #deebff;
+  --color-grey: #f2f2f2;
+  --color-black: #000000;
+  --color-white: #ffffff;
 }
