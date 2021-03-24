@@ -16,70 +16,87 @@
   flex-wrap: wrap;
 }
 .items-filter {
-  height: 46px;
+  position: relative;
+  box-sizing: border-box;
+  height: 50px;
   margin: 8px 12px 6px 0;
   border: 2px solid var(--color-grey);
-  border-radius: 23px;
+  border-radius: 25px;
+  line-height: 50px;
 }
-
-.itemFilter1 {
+.item1 {
   width: 170px;
 }
-.itemFilter2 {
+.item2 {
   width: 134px;
 }
-.itemFilter3 {
+.item3 {
   width: 170px;
 }
-.itemFilter4 {
+.item4 {
   width: 216px;
 }
 
-.icon-filter {
-  display: inline-block;
-  margin-top: -2px;
-  margin-left: -2px;
-  width: 46px;
+.filter-label {
+  display: block;
+  width: 100%;
   height: 46px;
-  text-align: center;
   line-height: 46px;
-  border: 2px solid var(--color-blue-light);
-  border-radius: 100%;
-  color: var(--color-blue);
-  font-size: 20px;
-  background-color: var(--color-blue-light);
-}
-
-.text-filter {
-  padding-left: 8px;
   font-size: 16px;
   font-weight: 800;
+  color: var(--color-grey-dark);
 }
 
-.items-filter:hover .text-filter {
-  color: var(--color-grey);
+.filter-label::before {
+  display: inline-block;
+  margin-top: -2px;
+  margin-right: 10px;
+  margin-left: -2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: var(--color-grey);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--color-grey-dark);
+  font-size: 20px;
+}
+.filter-label.label1::before {
+  content: "\f53a";
+}
+.filter-label.label2::before {
+  content: "\f1ae";
+}
+.filter-label.label3::before {
+  content: "\f004";
+}
+.filter-label.label4::before {
+  content: "\f6d3";
+}
+
+.items-filter input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.items-filter input[type="checkbox"]:checked + .filter-label {
+  color: var(--color-black);
+}
+.items-filter input[type="checkbox"]:checked + .filter-label::before {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue);
+}
+
+.items-filter:hover {
+  box-shadow: 0 0 10px var(--color-grey-dark);
 }
 .items-filter:hover .icon-filter {
   color: var(--color-blue-light);
   background-color: var(--color-grey);
 }
-.items-filter input[type="checkbox"] {
-  visibility: hidden;
-  /* pointer-events: none; */
-}
 
-.items-filter input[type="checkbox"] + label {
-  color: yellow;
-  /* background-color: var(--color-grey); */
-}
-.items-filter input[type="checkbox"]:checked + .titi {
-  color: red;
-  /* background-color: var(--color-grey); */
-}
-.items-filter input[type="checkbox"]:checked .items-filter:first-child {
-  color: red;
-  background-color: var(--color-grey);
-}
+/*-----------------------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
   .filter {

@@ -36,3 +36,6 @@ Following bug of github page, rename all repository.(https://github.community/t/
 
 23/03/2021
 Cleaning css and checkbox for filter in progress
+
+24/03/2021
+w3c validator:ok, filter modified.

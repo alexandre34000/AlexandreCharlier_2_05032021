@@ -27,8 +27,8 @@
             <a class="nav-elements nav__item-a" href="index.html" rel="nofollow"><img class="nav__logo"
                     alt="Revenir à la page d'acceuil Reservia.com" src="./pictures/logo/Reservia.svg" /></a>
             <a class="nav__elements nav__item-b " href="#">S'inscrire</a>
-            <a class="nav__elements nav__item-c nav__item--hover" href="#content-hebergements">Hébergements</a>
-            <a class="nav__elements nav__item-d nav__item--hover" href="#content-activites">Activités</a>
+            <a class="nav__elements nav__item-c nav__item--hover" href="#hebergements">Hébergements</a>
+            <a class="nav__elements nav__item-d nav__item--hover" href="#activity">Activités</a>
         </nav>
     </header>
     <main>
@@ -47,27 +47,21 @@
                 <section class="filter">
                     <h2 class="filter-title">Filtres</h2>
                     <div class="filter-list">
-                        <div class="items-filter itemFilter1">
-                            <span for="toto" class="icon-filter" id= "tutu">
-                                <i class="  fas fa-money-bill-wave "></i>
-                            </span>
-                            <input class="text-filter" id="toto" type="checkbox"  />
-                            <label class="titi" for="toto">Economique</label>
+                        <div class="items-filter item1">
+                            <input id="inputFil1" type="checkbox" checked>
+                            <label class="filter-label label1" for="inputFil1" >Economique</label>
                         </div>
-                        <div class="items-filter itemFilter2">
-                            <span class="icon-filter  ">
-                                <i class="fas fa-child "></i></span>
-                            <label class="text-filter">Familial</label>
+                        <div class="items-filter item2">
+                            <input id="inputFil2" type="checkbox" checked>
+                            <label class="filter-label label2" for="inputFil2" >Familial</label>
                         </div>
-                        <div class="items-filter itemFilter3">
-                            <span class="icon-filter ">
-                                <i class="fas fa-heart"></i></span>
-                            <label class="text-filter">Romantique</label>
+                        <div class="items-filter item3">
+                            <input id="inputFil3" type="checkbox" checked>
+                            <label class="filter-label label3" for="inputFil3" >Romantique</label>
                         </div>
-                        <div class="items-filter itemFilter4">
-                            <span class="icon-filter ">
-                                <i class="fas fa-dog "></i></span>
-                            <label class="text-filter">Animaux autorisés</label>
+                        <div class="items-filter item4">
+                            <input id="inputFil4" type="checkbox" checked>
+                            <label class="filter-label label4" for="inputFil4" >Animaux autorisés</label>
                         </div>
                     </div>
                 </section>
@@ -157,7 +151,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container container-xl container-hebergement">
+            <section class="container container-xl container-hebergement" id="hebergements">
                 <div class=" content-sm content-xl content-hebergement">
                     <h2>Hébergements à Marseille</h2>
                     <div class="content-cards content-cards__hebergement">
@@ -299,8 +293,8 @@
                 </div>
             </section>
 
-            <section class="container container-xl container-activity">
-                <div class="content-sm content-xl content-activity ">
+            <section class="container container-xl container-activity" id="activity">
+                <div class="content-sm content-xl content-activity " >
                     <h2>Activités à Marseille</h2>
                     <div class="content-cards content-cards__activity">
                         <div class=" card card-activity card-activity__item1">
@@ -346,7 +340,6 @@
                                 <h3>Parc Longchamp</h3>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -378,7 +371,7 @@
             </section>
         </div>
     </footer>
-    <script type="text/javascript" src="test.js"></script>
+    <script src="test.js"></script>
 </body>
 
 </html>
