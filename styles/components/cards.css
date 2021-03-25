@@ -1,6 +1,8 @@
 /* commun */
 
 .card {
+  max-width: 342px;
+  /*  box-sizing: border-box; */
   border: 6px solid white;
   border-radius: 20px;
   background-color: white;
@@ -14,7 +16,7 @@
 
 /* -----------card populaire-------------*/
 .card-populaire {
-  height: 132px;
+  height: 130px;
 }
 
 .card-populaire__link {
@@ -60,8 +62,9 @@
 }
 .card-hebergement__link {
   display: grid;
+  width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 114px auto;
+  grid-template-rows: 114px 80px;
   justify-items: stretch;
   align-items: stretch;
 }
@@ -118,10 +121,27 @@
   border-radius: 0 0 15px 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .card-populaire {
+    margin-right: 15px;
+  }
+  .card-hebergement {
+    margin-right: 15px;
+  }
+  .card-activity {
+    margin-right: 15px;
+    width: 250px;
+  }
+
+  /*  .card-populaire__link {
+       grid-template-columns: 130px 250px; 
+  } */
 }
 
 @media screen and (min-width: 1200px) {
+  .card {
+    max-width: 500px;
+  }
   .card-populaire__link {
     grid-template-columns: 9vw auto;
   }
