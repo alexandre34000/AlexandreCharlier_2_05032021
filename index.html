@@ -7,7 +7,7 @@
     <meta name="title" content="Reservia - Recherche des hotels">
     <meta name="keywords" content="hôtel, chambres, offres, prix, classement">
     <meta name="description" content="Reservia -Recherchez et visualisez les hôtels sur une localité, trouvez le meilleur en consultant les prix et les avis ">
-    <title>Reservia.fr - Recherche des hotels</title>
+    <title>Reservia - Recherche des hotels et des activitées</title>
     <link rel="icon" type="image/png" href="./pictures/logo/Reservia.svg" sizes="114x114">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +23,6 @@
 </head>
 
 <body>
-    
     <header class="header">
         <nav class="nav">
             <!-- <h2 class="visibility-hidden">Menu de navigation</h2> -->
@@ -33,13 +32,16 @@
             <a class="nav__elements nav__item-c nav__item--hover" href="#hebergements">Hébergements</a>
             <a class="nav__elements nav__item-d nav__item--hover" href="#activity">Activités</a>
         </nav>
+        <section><div>
         <h1 class="visibility-hidden">Les offres des hotels préférés, recherchez des hôtels ou des activitées </h1>
+    </div></section>
+    
     </header>
-    <main role="main">
+    <main>
         <!-- <h1 class="visibility-hidden">h1 main cachée</h1> -->
         <section class="container-search container-xl ">
             <div class="content-sm content-search">
-                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2> Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p class="content-search__label">En plein centre ville ou en pleine nature</p>
                 <form class="search-bar" id="search-bar" role="search">
                     <button class="button-map grey-color" onclick="getLocation()"><i
@@ -350,7 +352,7 @@
             </section>
         </div>
     </main>
-    <footer role="contentinfo">
+    <footer >
         <div class="container-footer">
             <section class="content-footer">
                 <h3>A propos</h3>
