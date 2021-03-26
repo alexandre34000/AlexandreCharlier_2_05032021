@@ -39,3 +39,9 @@ Cleaning css and checkbox for filter in progress
 
 24/03/2021
 w3c validator:ok, filter modified.
+
+25/03/2021
+test structural outline w3c validator
+
+25/03/2021
+new test
