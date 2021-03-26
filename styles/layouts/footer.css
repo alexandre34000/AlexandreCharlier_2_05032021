@@ -20,8 +20,9 @@ footer {
   padding: 10px 10px;
 }
 
-.content-footer h3 {
+.content-footer__title {
   font-size: 19px;
+  font-weight: 800;
 }
 
 .content-footer__link {
