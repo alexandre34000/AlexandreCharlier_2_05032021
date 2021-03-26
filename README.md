@@ -45,3 +45,9 @@ test structural outline w3c validator
 
 25/03/2021
 new test
+
+26/03/2021
+Search bar moved inside header
+
+26/03/2021
+few modification in html and css cleaner in progress
