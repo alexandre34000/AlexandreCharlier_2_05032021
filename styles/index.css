@@ -40,6 +40,10 @@ span {
   padding: 0;
 }
 
+.visibility-hidden {
+  display: none;
+}
+
 /* Header 
 *
 * in Css/Layout/_header 
