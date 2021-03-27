@@ -20,7 +20,7 @@ header {
 
   width: 100%;
 }
-nav {
+.nav {
   margin-block-start: 0;
   padding-inline-start: 0;
   display: grid;
@@ -104,7 +104,7 @@ nav {
     height: 390px;
   }
 
-  nav {
+  .nav {
     margin: 0 3vw;
     padding: 0 3px;
     grid-template-columns: auto 162px 148px 128px;

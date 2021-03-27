@@ -1,89 +1,80 @@
-.search-bar {
-  /*     width: 98%; */
-  max-width: 430px;
-  box-sizing: border-box;
+/**
+* searchBar.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme de la barre de recherche
+* Date :mars 2021;
+*
+*/
 
-  height: 54px;
-  margin: 25px 0 25px 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 52px auto 52px;
-  justify-items: stretch;
+.search-bar {
+  display: block;
+  box-sizing: border-box;
+  margin: 25px 0;
+  max-width: 430px;
+  height: 52px;
   border: 2px solid var(--color-grey);
   border-radius: 20px;
-  background-color: var(--color-white);
 }
-.button-map {
-  width: 54px;
-  height: 54px;
-  margin: -2px 0 0 -2px;
-  text-align: center;
-  line-height: 54px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--color-grey);
-  border-radius: 20px 0 0 20px;
-}
-.button-map:focus {
-  outline: none;
-}
-.fa-map-marker-alt {
+
+/* .icon-search {
   font-size: 20px;
-}
-.label-search {
-  width: 50px;
-}
-.input-text {
-  width: 90%;
-  height: 50px;
-  padding: 0;
+} */
+.btn {
+  margin-top: -2px;
+  width: 52px;
+  height: 52px;
   border: 0;
-  margin: 0 auto;
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--color-black);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button-map {
+  margin-left: -2px;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--color-grey);
+}
+
+.input-search {
+  display: inline-block;
+  vertical-align: top;
+  /*  box-sizing: border-box; */
+  padding-left: 15px;
+  border: 0;
+  width: 224px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .button-search {
-  width: 54px;
-  height: 54px;
-  margin-top: -2px;
-  /* margin-left: 2px; */
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--color-blue);
+  display: inline-block;
+  margin-right: -2px;
   border-radius: 20px;
   background-color: var(--color-blue);
-}
-.button-search:focus {
-  outline: none;
-}
-.fa-search {
   color: var(--color-white);
-  font-size: 20px;
 }
 .button-search__text {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
-  .search-bar {
-    /*  width: 419px;
-    height: 50px; */
-    margin-top: 7px;
-    grid-template-columns: 53px 234px 132px;
-  }
-  .button-search {
-    width: 132px;
-    color: var(--color-white);
-    font-size: 20px;
-    border-radius: 0 20px 20px 0;
+@media screen and (min-width: 768px) {
+  .input-search {
+    width: 234px;
   }
 
-  .fa-search {
+  .button-search__text {
+    display: initial;
+  }
+
+  .icon-search {
     display: none;
   }
-  .button-search__text {
-    display: inline;
+
+  .button-search {
+    width: 134px;
+    border-radius: 0 20px 20px 0;
   }
 }

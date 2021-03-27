@@ -26,8 +26,10 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a class="nav_elements nav__item-a" href="index.html" rel="nofollow"><img class="nav__logo"
+            <h1>
+                <a class="nav_elements nav__item-a" href="index.html" rel="nofollow"><img class="nav__logo"
                     alt="Revenir à la page d'acceuil Reservia.com" src="./pictures/logo/Reservia.svg" /></a>
+            </h1>
             <a class="nav__elements nav__item-b " href="#">S'inscrire</a>
             <a class="nav__elements nav__item-c nav__item--hover" href="#hebergements">Hébergements</a>
             <a class="nav__elements nav__item-d nav__item--hover" href="#activity">Activités</a>
@@ -37,12 +39,15 @@
                 <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="content-search__label">En plein centre ville ou en pleine nature</p>
                 <form class="search-bar" id="search-bar" role="search">
-                    <button class="button-map grey-color" onclick="getLocation()"><i
-                            class="fas fa-map-marker-alt"></i></button>
-                    <input class="input-text" id="input-search" type="search" name="destination" placeholder="localité"
+                    <button class="btn button-map" onclick="getLocation()"><i
+                            class=" fas fa-map-marker-alt"></i></button>
+                    <input class="input-search" id="input-search" type="search" name="destination" placeholder="localité"
                         value="Marseille, France" autocomplete="off">
-                    <button class="button-search" type="submit" name="btn_search" title="recherche d'hôtels"
-                        form="search-bar" value="valider" onclick="getLocation()" ><i class="fas fa-search"></i><span class="button-search__text">Rechercher</span></button>
+                    <button class="btn button-search" type="submit" name="btn_search" title="recherche d'hôtels"
+                        form="search-bar" value="valider" onclick="getLocation()" >
+                        <i class="icon-search fas fa-search"></i>
+                        <span class="button-search__text">Rechercher</span>
+                    </button>
                 </form>
                 <section class="filter">
                     <h2 class="filter-title">Filtres</h2>
