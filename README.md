@@ -51,3 +51,6 @@ Search bar moved inside header
 
 26/03/2021
 few modification in html and css cleaner in progress
+
+27/03/2021
+refactor search bar
