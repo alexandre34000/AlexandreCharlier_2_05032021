@@ -25,8 +25,8 @@
 
 <body>
     <header class="header">
-        <h1>toto</h1>
-        <nav class="nav">
+        <!-- <h1>toto titre referencé comme balise h1 du body</h1> -->
+        <nav class="nav" aria-labelledby="menu-navigation">
             <h1>
                 <a class="nav_elements nav__item-a" href="index.html" rel="nofollow"><img class="nav__logo"
                     alt="Revenir à la page d'acceuil Reservia.com" src="./pictures/logo/Reservia.svg" /></a>
@@ -37,7 +37,7 @@
         </nav>
         <div class="container-search container-xl ">
             <div class="content-sm content-md content-xl content-search">
-                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2> Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="content-search__label">En plein centre ville ou en pleine nature</p>
                 <form class="search-bar" id="search-bar" role="search">
                     <button class="btn button-map" onclick="getLocation()"><i
