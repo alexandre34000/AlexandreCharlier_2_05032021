@@ -1,17 +1,11 @@
-/* INDEX.CSS 1.0 mars 2021 by Alexandre CHARLIER  */
 /**
-Author : Alexandre CHARLIER;
-URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
-Theme Name : Hotel Reservia ;
-Description : Mise en forme des modules principaux
-date :mars 2021; 
-Conventioon de nommage, méthode BEM :
-block-name__elem-name--mod-name--mod-val
-Les noms sont écrits en lettres latines minuscules.
-Les mots dans les noms des entités BEM sont séparés par un tiret ( - ).
-Le nom de l'élément est séparé du nom du bloc par un double tiret bas ( __ ).
-Les modificateurs booléens sont séparés du nom du bloc ou de l'élément par un double tiret ( -- ).
-La valeur d'un modificateur est séparée de son nom par un double tiret ( -- ).
+* index.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme des modules principaux
+* Date: mars 2021; 
 */
 
 html,
@@ -48,12 +42,10 @@ span {
   justify-content: space-between;
   margin: 15px 0;
 }
-
 .container {
   padding-top: 45px;
   width: 100%;
 }
-
 .content-cards {
   display: flex;
   flex-direction: column;
@@ -62,16 +54,13 @@ span {
   width: 100%;
   margin: 20px 0;
 }
-
 .container-popular {
   height: 535px;
   background-color: var(--color-grey);
 }
-
 .content-popular__title {
   display: block;
 }
-
 .content-popular__h2 {
   display: inline-block;
 }
@@ -80,28 +69,22 @@ span {
   font-size: 22px;
   font-weight: 800;
 }
-
 .content-cards__popular {
   height: 460px;
 }
-
 .container-hebergement {
   height: 1380px;
 }
-
 .content-cards__hebergement {
   height: 1280px;
 }
-
 .content-hebergement__more-link {
   font-size: 18px;
   font-weight: 800;
 }
-
 .container-activity {
   height: 1350px;
 }
-
 .content-cards__activity {
   height: 1250px;
 }
@@ -113,28 +96,23 @@ span {
     margin: 0 2vw;
     padding: 0 8px;
   }
-
   .content-cards {
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
   }
-
   .container-popular {
     height: 250px;
   }
-
   .content-cards__popular {
     height: 150px;
   }
-
   .container-hebergement {
     height: 300px;
   }
   .content-cards__hebergement {
     height: 200px;
   }
-
   .container-activity {
     height: 300px;
   }
@@ -154,28 +132,23 @@ span {
   .container-middle__xl {
     margin: 0 3vw 30px 3vw;
   }
-
   .content-xl {
     margin: 0 2vw;
     padding: 0 8px;
   }
-
   .container-popular {
     order: 2;
     width: 29vw;
     height: 580px;
     border-radius: 18px;
   }
-
   .content-cards {
     display: flex;
     flex-wrap: wrap;
   }
-
   .content-cards__popular {
     height: 500px;
   }
-
   .container-hebergement {
     order: 1;
     width: 61vw;
@@ -183,11 +156,9 @@ span {
     border-radius: 18px;
     background-color: var(--color-grey);
   }
-
   .content-cards__hebergement {
     height: 435px;
   }
-
   .container-activity {
     order: 3;
     height: 500px;

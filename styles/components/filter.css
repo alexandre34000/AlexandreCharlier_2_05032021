@@ -1,3 +1,13 @@
+/**
+* filter.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme de la barre des filtres
+* Date :mars 2021;
+*/
+
 .filter {
   display: block;
   width: 100%;
@@ -79,7 +89,6 @@
   position: absolute;
   visibility: hidden;
 }
-
 .items-filter input[type="checkbox"]:checked + .filter-label {
   color: var(--color-black);
 }
@@ -87,7 +96,6 @@
   background-color: var(--color-blue-light);
   color: var(--color-blue);
 }
-
 .items-filter:hover {
   box-shadow: 0 0 10px var(--color-grey-dark);
 }

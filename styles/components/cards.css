@@ -1,4 +1,12 @@
-/* commun */
+/**
+* cards.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme de la barre des filtres
+* Date :mars 2021;
+*/
 
 .card {
   max-width: 342px;
@@ -88,10 +96,6 @@
   line-height: 16px;
 }
 .icon-star {
-  /* padding: 0; */
-  /*  width: 14px;
-  height: 14px; */
-  /* text-indent: 0; */
   color: var(--color-grey);
 }
 .icone-star--enable {
@@ -132,10 +136,6 @@
     margin-right: 15px;
     width: 250px;
   }
-
-  /*  .card-populaire__link {
-       grid-template-columns: 130px 250px; 
-  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -180,12 +180,6 @@
     height: 210px;
     grid-template-rows: 154px 56px;
   }
-
-  /* .card-activity__photo {
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  } */
-
   .card-activity__legend {
     align-self: center;
     padding: 0 20px;
