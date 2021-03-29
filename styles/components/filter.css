@@ -10,7 +10,6 @@
 
 .filter {
   display: block;
-  width: 100%;
   height: auto;
   margin-bottom: 28px;
 }
@@ -32,7 +31,6 @@
   margin: 8px 12px 6px 0;
   border: 2px solid var(--color-grey);
   border-radius: 25px;
-  line-height: 50px;
 }
 .item1 {
   width: 170px;

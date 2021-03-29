@@ -12,7 +12,6 @@ html,
 body {
   margin: 0;
 }
-
 a {
   text-decoration: none;
   color: var(--color-black);
@@ -52,7 +51,7 @@ span {
   justify-content: space-between;
   align-content: space-between;
   width: 100%;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 .container-popular {
   height: 535px;
@@ -92,6 +91,9 @@ span {
 /*-----------------------------------------------------------------------*/
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
+  .container-md {
+    margin-top: 0;
+  }
   .content-md {
     margin: 0 2vw;
     padding: 0 8px;
@@ -126,9 +128,6 @@ span {
   .container-xl {
     margin: 0 0 30px 0;
   }
-
-  /* Main - Container-Middle */
-
   .container-middle__xl {
     margin: 0 3vw 30px 3vw;
   }

@@ -38,14 +38,14 @@
   vertical-align: top;
   padding-left: 15px;
   border: 0;
-  width: 224px;
+  width: 200px;
   height: 48px;
   font-size: 20px;
   font-weight: 600;
 }
 
 .button-search {
-  display: inline-block;
+  float: right;
   margin-right: -2px;
   border-radius: 20px;
   background-color: var(--color-blue);

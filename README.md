@@ -54,3 +54,6 @@ few modification in html and css cleaner in progress
 
 27/03/2021
 refactor search bar
+
+29/03/2021
+css cleaning and update searchbar responsive
