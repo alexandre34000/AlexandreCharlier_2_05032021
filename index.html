@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="title" content="Reservia - Recherche des hotels">
-    <meta name="keywords" content="hôtel, chambres, offres, prix, classement">
-    <meta name="description" content="Reservia - Planifiez vos vacances. Recherchez et visualisez les hôtels et les activités dans la ville de votre choix.">
+    <meta name="title" content="Reservia - Planifiez vos vacances, trouvez des hébergements et activités ">
+    <meta name="keywords" content="hébergements, activités, offres, prix, notation,ville">
+    <meta name="description" content="Reservia - Planifiez vos vacances. Recherchez les hebergements et les activités dans la ville de votre choix.">
     <meta name="author" content="Alexandre CHARLIER ">
     <title>Reservia - Recherche des hotels et des activitées</title>
-    <link rel="icon" type="image/png" href="./pictures/logo/Reservia.svg" sizes="114x114">
+    <link rel="icon" type="image/svg+xml" href="./pictures/logo/Reservia.svg" sizes="114x114">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800;900&display=swap">
     <link rel="stylesheet" type="text/css" href="./styles/bases/fonts.css">
     <link rel="stylesheet" type="text/css" href="./styles/bases/variables.css">
     <link rel="stylesheet" type="text/css" href="./styles/layouts/header.css">
@@ -25,7 +24,7 @@
 
 <body>
     <header>
-        <!-- <h1>toto titre referencé comme balise h1 du body</h1> -->
+        <h1 class="display-none">Planifiez vos vacances, trouvez des hébergements et activités</h1>
         <nav class="nav">
             <a class="nav_elements nav__item-a" href="index.html" rel="nofollow"><img class="nav__logo"
                     alt="Revenir à la page d'acceuil Reservia.com" src="./pictures/logo/Reservia.svg" /></a>
@@ -35,36 +34,36 @@
         </nav>
         <div class="container-search container-md container-xl ">
             <div class="content-sm content-md content-xl content-search">
-                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2> Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p class="content-search__label">En plein centre ville ou en pleine nature</p>
                 <form class="search-bar" id="search-bar" role="search">
-                    <button class="btn button-map" onclick="getLocation()"><i
-                            class=" fas fa-map-marker-alt"></i></button>
-                    <input class="input-search" id="input-search" type="search" name="destination" placeholder="localité"
-                        value="Marseille, France" autocomplete="off">
-                    <button class="btn button-search" type="submit" name="btn_search" title="recherche d'hôtels"
-                        form="search-bar" value="valider" onclick="getLocation()" >
+                    <label for="input-searchId" class="discribe-search label-search" type="text" title="Localisation" ><i
+                            class=" fas fa-map-marker-alt"></i></label>
+                    <input class="input-search" id="input-searchId" type="search" name="destination" placeholder="localité"
+                        value="Marseille, France" maxlength="20" autocomplete="off">
+                    <button class="discribe-search button-search" type="submit" name="btn_search" title="Button de recherche"
+                        form="search-bar" value="valider"onclick="toDoSomethings();" >
                         <i class="icon-search fas fa-search"></i>
                         <span class="button-search__text">Rechercher</span>
                     </button>
                 </form>
                 <section class="filter">
-                    <h2 class="filter-title">Filtres</h2>
+                    <h3 class="filter-title">Filtres</h3>
                     <div class="filter-list">
                         <div class="items-filter item1">
-                            <input id="inputFil1" type="checkbox" checked>
+                            <input id="inputFil1" type="checkbox" value="Economique" checked>
                             <label class="filter-label label1" for="inputFil1" >Economique</label>
                         </div>
                         <div class="items-filter item2">
-                            <input id="inputFil2" type="checkbox" checked>
+                            <input id="inputFil2" type="checkbox" value="Familial" checked>
                             <label class="filter-label label2" for="inputFil2" >Familial</label>
                         </div>
                         <div class="items-filter item3">
-                            <input id="inputFil3" type="checkbox" checked>
+                            <input id="inputFil3" type="checkbox" value="Romantique" checked>
                             <label class="filter-label label3" for="inputFil3" >Romantique</label>
                         </div>
                         <div class="items-filter item4">
-                            <input id="inputFil4" type="checkbox" checked>
+                            <input id="inputFil4" type="checkbox" value="Animaux autorisés" checked>
                             <label class="filter-label label4" for="inputFil4" >Animaux autorisés</label>
                         </div>
                     </div>

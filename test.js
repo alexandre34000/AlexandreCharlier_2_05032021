@@ -1,4 +1,4 @@
-function getLocation(){
-    var input = document.getElementById("input-search").value;
+function toDoSomethings(){
+    var input = document.getElementById("input-searchId").value;
 alert("Bonjour vous avez selectionné :"+input);
 }
