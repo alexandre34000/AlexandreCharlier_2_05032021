@@ -1,0 +1,55 @@
+/**
+* footer.css  1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme du css footer; 
+* Date :mars 2021;
+*/
+
+footer {
+  background-color: var(--color-grey);
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  margin: 0 5%;
+  height: 485px;
+}
+
+.content-footer {
+  height: 120px;
+  padding: 10px 10px;
+}
+.content-footer__title {
+  font-size: 19px;
+  font-weight: 800;
+}
+.content-footer__link {
+  padding: 0;
+}
+.content-footer__link li {
+  margin-bottom: 8px;
+}
+.content-footer__link li a {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  .container-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    justify-content: space-between;
+    margin: 0 3vw;
+    width: 70%;
+  }
+}

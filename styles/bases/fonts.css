@@ -1,0 +1,50 @@
+/**
+* fonts.ccs  1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme des fonts; 
+* Date :mars 2021
+*/
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+h4,
+h5 {
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0;
+}

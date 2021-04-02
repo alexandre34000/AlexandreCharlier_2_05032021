@@ -1,0 +1,187 @@
+/**
+* cards.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme de la barre des filtres
+* Date :mars 2021;
+*/
+
+.card {
+  max-width: 342px;
+  border: 6px solid white;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 8px 2px #eceaea;
+}
+
+.card-photo {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0px;
+}
+
+/* -----------card populaire-------------*/
+.card-populaire {
+  height: auto;
+}
+
+.card-populaire__link {
+  display: grid;
+  grid-template-columns: 130px auto;
+  grid-template-rows: 130px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.card-populaire__photo {
+  border-radius: 15px 0 0 15px;
+}
+
+.card-populaire__legend {
+  position: relative;
+  padding: 0 20px;
+  height: 113px;
+  align-self: center;
+}
+
+.card-populaire__price {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-populaire__stars {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 14px 14px 14px 14px 14px;
+  column-gap: 1px;
+  height: 16px;
+  line-height: 16px;
+  color: var(--color-blue);
+}
+
+/*----------------card hebergement---------------*/
+
+.card-hebergement {
+  height: auto;
+}
+.card-hebergement__link {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 114px 80px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.card-hebergement__legend {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-hebergement__price {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-hebergement__stars {
+  display: grid;
+  grid-template-columns: 14px 14px 14px 14px 14px;
+  column-gap: 1px;
+  height: 16px;
+  line-height: 16px;
+}
+.icon-star {
+  color: var(--color-grey);
+}
+.icone-star--enable {
+  color: var(--color-blue);
+}
+.fa-star {
+  font-size: 14px;
+}
+
+/* -----------------cards activity--------------- */
+
+.card-activity {
+  height: auto;
+  border: 0;
+}
+.card-activity__link {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 134px 56px;
+  justify-items: stretch;
+  align-items: stretch;
+  border: 0;
+}
+
+.card-activity__legend {
+  align-self: center;
+  padding: 0 20px;
+  object-fit: cover;
+  border-radius: 0 0 15px 15px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+
+  .card-populaire {
+    margin-right: 15px;
+  }
+  .card-hebergement {
+    margin-right: 15px;
+  }
+  .card-activity {
+    margin-right: 15px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 500px;
+  }
+
+  .card-populaire__link {
+    grid-template-columns: 9vw auto;
+  }
+  .card-populaire__legend {
+    padding: 0 0 0 10px;
+  }
+
+  .card-hebergement__link {
+    grid-template-columns: 16.9vw;
+  }
+
+  .card-activity {
+    width: 20%;
+  }
+  .card-activity__item1 { 
+    grid-template-rows: 394px 56px;
+  }
+  .card-activity__item2 {
+    grid-template-rows: 184px 56px;
+  }
+  .card-activity__item3 {
+    grid-template-rows: 106px 56px;
+  }
+  .card-activity__item4 {
+    grid-template-rows: 394px 56px;
+  }
+  .card-activity__item5 {
+    grid-template-rows: 138px 56px;
+  }
+  .card-activity__item6 {
+    grid-template-rows: 154px 56px;
+  }
+  .card-activity__legend {
+    align-self: center;
+    padding: 0 20px;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px;
+  }
+}

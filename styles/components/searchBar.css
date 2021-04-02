@@ -1,0 +1,78 @@
+/**
+* searchBar.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme de la barre de recherche
+* Date :mars 2021;
+*/
+
+.search-bar {
+  display: block;
+  box-sizing: border-box;
+  margin: 25px 0;
+  max-width: 430px;
+  height: 52px;
+  border: 2px solid var(--color-grey);
+  border-radius: 20px;
+}
+
+.discribe-search {
+  display: inline-block;
+  margin-top: -2px;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.label-search {
+  margin-left: -2px;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--color-grey);
+}
+
+.input-search {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  border: 0;
+  width: 200px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button-search {
+  float: right;
+  margin-right: -2px;
+  border-radius: 20px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.button-search__text {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .input-search {
+    width: 234px;
+  }
+
+  .button-search__text {
+    display: initial;
+  }
+
+  .icon-search {
+    display: none;
+  }
+
+  .button-search {
+    width: 134px;
+    border-radius: 0 20px 20px 0;
+  }
+}

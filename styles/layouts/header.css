@@ -1,0 +1,132 @@
+/**
+* header.css  1.0 mars 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme du Header; 
+* Date :mars 2021;
+*/
+
+.content-nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 64px 64px;
+  align-items: center;
+}
+
+.nav__elements {
+  height: 56px;
+  line-height: 64px;
+  font-weight: 500;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-grey);
+}
+.nav__item-a {
+  padding: 0 20px;
+}
+.nav__item-b {
+  padding: 0 20px;
+  text-align: right;
+  color: var(--color-blue);
+}
+.nav__item-c,
+.nav__item-d {
+  text-align: center;
+  color: var(--color-black);
+  border-style: solid;
+  border-width: 3px 0;
+}
+.nav__item--hover:hover {
+  color: var(--color-blue);
+  border-bottom-color: var(--color-blue);
+}
+.nav__logo {
+  padding-top: 8px;
+  width: 97px;
+  height: 45px;
+}
+
+.container-search {
+  margin: 30px 0;
+  width: 100%;
+  height: auto;
+}
+
+.content-search__label {
+  padding: 7px 0;
+  font-weight: 500;
+}
+
+.information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.content-information {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--color-grey);
+  border-radius: 100%;
+  text-align: center;
+}
+.icon-information {
+  vertical-align: baseline;
+  font-size: 11px;
+  color: var(--color-blue);
+}
+
+.text-information {
+  margin: 3px 0 0 10px;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  /* md and after */
+
+  .content-nav {
+    grid-template-columns: auto 162px 148px 128px;
+    grid-template-rows: 128px;
+  }
+  .nav__elements {
+    height: 120px;
+    line-height: 120px;
+    border-bottom-color: transparent;
+    grid-row: 1;
+  }
+  .nav__item-a {
+    padding: 0;
+    grid-column: 1 / 2;
+  }
+  .nav__item-b {
+    padding: 0;
+    text-align: center;
+    grid-column: 4 / 5;
+  }
+  .nav__item-c {
+    grid-column: 2 / 3;
+    border-width: 3px 0;
+  }
+  .nav__item-d {
+    grid-column: 3 / 4;
+    border-width: 3px 0;
+  }
+  .nav__item--hover:hover {
+    border-top-color: var(--color-blue);
+    border-bottom-color: transparent;
+  }
+  .nav__logo {
+  vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .content-search {
+    margin: 0 3vw;
+    padding: 0 3px;
+  }
+
+  .information {
+    padding-left: 5px;
+  }
+}

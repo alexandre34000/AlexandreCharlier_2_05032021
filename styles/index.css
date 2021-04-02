@@ -1,0 +1,172 @@
+/**
+* index.css 1.0 mars 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER;
+* URI : https://alexandre34000.github.io/AlexandreCharlier_3_05032021/ ;
+* Theme Name : Hotel Reservia ;
+* Description : Mise en forme des modules principaux
+* Date: mars 2021; 
+*/
+
+html,
+body,
+header,
+main,
+footer,
+p,
+section,
+div,
+label,
+span {
+  margin: 0;
+}
+
+.display-none {
+  display: none;
+}
+
+.content-sm {
+  margin: 0 5%;
+}
+
+/* Main - container middle */
+
+.container-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.container {
+  padding-top: 45px;
+  width: 100%;
+  height:auto;
+}
+.content-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.container-popular {
+  background-color: var(--color-grey);
+}
+.content-popular__title {
+  display: block;
+}
+.content-popular__h2 {
+  display: inline-block;
+}
+.content-popular__icon {
+  float: right;
+  font-size: 22px;
+  font-weight: 800;
+}
+.content-cards__popular {
+  height: 460px;
+}
+
+.content-cards__hebergement {
+  height: 1300px;
+}
+.content-hebergement__more-link {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.content-cards__activity {
+  height: 1280px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .container-md {
+    margin-top: 0;
+  }
+  .content-md {
+    margin: 0 2vw;
+    padding: 0 8px;
+  }
+
+  .content-cards::-webkit-scrollbar {
+    height: 5px;
+  }
+  .content-cards::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: var(--color-grey);
+  }
+  .content-cards::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #a1a1a1;
+  }
+
+  .content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+  .content-cards__popular {
+    height: 170px;
+  }
+  
+  .content-cards__hebergement {
+    height: 230px;
+  }
+ 
+  .content-cards__activity {
+    height: 230px;
+  }
+}
+
+/*------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .container-xl {
+    margin: 0 0 30px 0;
+  }
+  .container-middle__xl {
+    margin: 0 3vw 10px 3vw;
+  }
+  .content-xl {
+    margin: 0 2vw;
+    padding: 0 8px;
+  }
+ 
+  .container-popular {
+    order: 2;
+    width: 29vw;
+    border-radius: 18px;
+  }
+  .content-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-cards__popular {
+    height: 500px;
+  }
+
+  .container-hebergement {
+    order: 1;
+    width: 61vw;
+    border-radius: 18px;
+    background-color: var(--color-grey);
+  }
+  .content-cards__hebergement {
+    height: 435px;
+  }
+
+  .container-activity {
+    order: 3;
+  }
+  .content-activity {
+    margin: 0;
+  }
+  .content-cards__activity {
+    height: 450px;
+  }
+}
